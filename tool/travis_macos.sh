@@ -59,6 +59,7 @@ build() {
 
     conan user -p "${CONAN_PASSWORD}" -r inexor "${CONAN_USER}"
 
+    rebuild_conan "doxygen/1.8.13@inexorgame/stable"
     build_conan_and_upload "kainjow-mustache/3.1@inexorgame/stable"
     build_conan_and_upload "bzip2/1.0.6@conan/stable"
     build_conan_and_upload "pugixml/1.7@inexorgame/stable"
